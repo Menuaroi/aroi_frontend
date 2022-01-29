@@ -12,5 +12,3 @@ jobs:
       - run: bats -v
       - name: Setup Go environment
         uses: actions/setup-go@v2.1.5
-      - name: First interaction
-        uses: actions/first-interaction@v1.1.0
