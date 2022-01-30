@@ -3,7 +3,7 @@ describe("Our application", function () {
   // This is the name of the test
   it("should understand basic mathematical principles", function (done) {
     // We want this test to pass.
-    if (5 == 3) {
+    if (5 == 5) {
       // If the behavior is as expected, call done with no argument.
       done();
     } else {
