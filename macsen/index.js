@@ -48,3 +48,24 @@ var app6 = new Vue({
     message: "Hello vue",
   },
 });
+
+Vue.component("todo-item", {
+  props: ["topic"],
+  template: "<li>{{ topic }}</li>",
+});
+
+var app7 = new Vue({
+  el: "#app-7",
+  data: {
+    groceryList: [
+      {
+        id: 1,
+        topic: "Do #1",
+      },
+      {
+        id: 2,
+        topic: "Do #2",
+      },
+    ],
+  },
+});
