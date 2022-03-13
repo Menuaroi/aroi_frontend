@@ -1,3 +1,12 @@
-export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+export default function Login() {
+  return (
+    <>
+      <h1 className="">login</h1>
+      <p>Email: </p>
+      <p>Password: </p>
+      <button role="button" name="Submit user">
+        login
+      </button>
+    </>
+  );
 }
