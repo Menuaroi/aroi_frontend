@@ -12,7 +12,10 @@
     "test": "jest",
     "test-live": "jest --watch",
     "lint": "next lint",
-    "cypress:headless": "start-server-and-test start http://localhost:3000 cypress run",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3004 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3004 cypress:headless",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -35,5 +38,5 @@
     "commitizen": {
       "path": "cz-emoji"
     }
-  } 
+  }
 }
