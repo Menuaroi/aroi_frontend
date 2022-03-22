@@ -1,12 +1,12 @@
 import { render, screen} from '@testing-library/react'
-import Login from '../../../pages/user/login'
+import Logout from '../../../pages/user/logout'
 
-describe('Login', () => {
+describe('Logout', () => {
     it('renders a login component', () => {
-        render(<Login/>)
+        render(<Logout/>)
 
         const heading = screen.getByRole('link', {
-            name: /login/i,
+            name: /logout/i,
         })
 
         expect(heading).toBeInTheDocument()
